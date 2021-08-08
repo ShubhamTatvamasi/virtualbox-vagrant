@@ -12,7 +12,7 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 sudo apt-get update && sudo apt-get install vagrant
 ```
 
-install plugins:
+install virtual box guest plugin:
 ```bash
 vagrant plugin install vagrant-vbguest
 ```
