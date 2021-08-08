@@ -7,6 +7,8 @@ Vagrant.configure("2") do |config|
     v.memory = 65536
     v.cpus = 16
   end
+
+  config.vm.box_check_update = false
   
   config.vm.provision "shell", run: "always",
   inline: <<-SHELL
