@@ -2,6 +2,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/focal64"
   config.vm.network "public_network", bridge: "ens1f0", ip: "192.168.5.11"
+  config.vm.disk :disk, size: "100GB", primary: true
 
   config.vm.provider "virtualbox" do |v|
     v.linked_clone = true
