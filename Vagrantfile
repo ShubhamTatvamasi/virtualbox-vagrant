@@ -12,11 +12,13 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.box_check_update = false
-  
-  config.vm.provision "shell", run: "always",
-  inline: <<-SHELL
-    ip route del default via 10.0.2.2
-    ip route add default via 192.168.5.1
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "@reboot ip route add default via 192.168.5.1" \
+      > /var/spool/cron/crontabs/root
   SHELL
+
+  config.vm.provision "shell", run: "always",
+    inline: "ip route add default via 192.168.5.1"
 
 end
