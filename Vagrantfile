@@ -19,6 +19,6 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision "shell", run: "always",
-    inline: "ip route add default via 192.168.5.1"
+    inline: "ip route add default via 192.168.5.1 || true"
 
 end
