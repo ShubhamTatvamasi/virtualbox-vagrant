@@ -5,7 +5,6 @@ Vagrant.configure("2") do |config|
   config.vm.disk :disk, size: "100GB", primary: true
 
   config.vm.provider "virtualbox" do |v|
-    v.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
     v.linked_clone = true
     v.memory = 65536
     v.cpus = 16
