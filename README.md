@@ -2,7 +2,7 @@
 
 install virtualbox:
 ```bash
-sudo apt install virtualbox virtualbox-guest-utils vagrant -y
+sudo apt install virtualbox virtualbox-guest-utils -y && sudo apt install vagrant -y
 ```
 
 install virtual box guest plugin:
