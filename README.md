@@ -7,7 +7,7 @@ sudo apt install virtualbox virtualbox-guest-utils vagrant -y
 
 install virtual box guest plugin:
 ```bash
-vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-vbguest vagrant-scp
 ```
 
 ### OLD
