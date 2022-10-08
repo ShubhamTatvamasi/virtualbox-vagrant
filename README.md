@@ -1,5 +1,8 @@
 # virtualbox-vagrant
 
+M1: \
+https://download.virtualbox.org/virtualbox/7.0.0_BETA3/
+
 install virtualbox:
 ```bash
 sudo apt install virtualbox virtualbox-guest-utils -y && sudo apt install vagrant -y
